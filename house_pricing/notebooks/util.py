@@ -32,9 +32,9 @@ def get_basic_feature_stats(data):
     
 # Ordinal encoding of categorical features:
 def ordinal_encoding(data):
-    
-    '''Finds all cartegorical features and does ordinal encoding.'''
-    
+    '''
+    Finds all cartegorical features and does ordinal encoding.
+    '''
     categorical_features = data.select_dtypes(include=['object']).columns
     numerical_features = data.select_dtypes(include=['number', 'datetime']).columns
     for feature in categorical_features:
